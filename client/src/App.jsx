@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import LivesSaved from './components/LivesSaved/LivesSaved';
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <LivesSaved />
+    </div>
   );
 };
 
