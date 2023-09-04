@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.component {
+  flex: 1;
+}
