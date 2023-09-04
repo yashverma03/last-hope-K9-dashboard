@@ -7,7 +7,7 @@ const server = jsonServer.create();
 
 server.use(jsonServer.defaults());
 
-const router = jsonServer.router('db.json');
+const router = jsonServer.router('data.json');
 server.use(router);
 
 const port = 4000;
