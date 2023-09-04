@@ -5,9 +5,10 @@
 
 h2 {
   text-align: center;
-  color: grey;
+  color: rgb(107, 107, 107);
   font-weight: 500;
   margin-bottom: -25px;
+  font-family: 'Benton Sans Low-DPI', Arial, Helvetica, sans-serif;
 }
 
 h1 {
