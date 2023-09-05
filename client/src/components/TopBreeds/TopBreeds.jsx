@@ -64,7 +64,7 @@ const TopBreeds = () => {
               display: false,
             },
             ticks: {
-              callback: () => '',
+              display: false, 
             },
             borderColor: 'rgba(0, 0, 0, 0)',
           },

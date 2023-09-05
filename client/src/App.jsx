@@ -19,7 +19,7 @@ const App = () => {
       </div>
 
       <div className='component'>
-        {/* <Characteristics /> */}
+        <Characteristics />
         <TopBreeds />
       </div>
     </div>
