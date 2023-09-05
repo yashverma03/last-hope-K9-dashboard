@@ -11,7 +11,7 @@ const AdoptOverTime = () => {
       const data = response.data;
       console.log(data);
 
-      const lineChart = document.getElementById('chart1').getContext('2d');
+      const lineChart = document.getElementById('AdoptOverTime-chart').getContext('2d');
 
       new Chart(lineChart, {
         type: 'line',
@@ -68,11 +68,11 @@ const AdoptOverTime = () => {
   }, []);
 
   return (
-    <div className='chart-container'>
-      <h2>Avg Time to Adopt over Time</h2>
+    <div className={styles.chartContainer}>
+      <h2 className={styles.title}>Avg Time to Adopt over Time</h2>
 
-      <div className='chart-wrapper'>
-        <canvas id='chart1' />
+      <div className={styles.chartWrapper}>
+        <canvas id='AdoptOverTime-chart' className={styles.chart} />
       </div>
     </div>
   );
