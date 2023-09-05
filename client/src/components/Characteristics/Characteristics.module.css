@@ -1,0 +1,27 @@
+.chartContainer {
+  width: 300px;
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  color: rgb(107, 107, 107);
+  font-weight: 600;
+  font-family: 'Benton Sans Low-DPI', Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 10px;
+  margin-top: 10px;
+  color: rgb(107, 107, 107);
+  font-family: 'Benton Sans Low-DPI', Arial, Helvetica, sans-serif;
+}
+
+.chartWrapper {
+  margin-bottom: 40px;
+}
+
+.chart {
+  height: 150px;
+}
