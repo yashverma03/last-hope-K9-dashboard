@@ -9,7 +9,6 @@ const AdoptOverTime = () => {
     try {
       const response = await axios.get(`${apiUrl}/AdoptOverTimeData`);
       const data = response.data;
-      console.log(data);
 
       const lineChart = document.getElementById('AdoptOverTime-chart').getContext('2d');
 

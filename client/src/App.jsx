@@ -20,7 +20,7 @@ const App = () => {
 
       <div className='component'>
         {/* <Characteristics /> */}
-        {/* <TopBreeds /> */}
+        <TopBreeds />
       </div>
     </div>
   );
