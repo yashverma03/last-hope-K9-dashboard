@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import Chart from 'chart.js/auto';
-import './LivesSaved.css';
+import styles from './LivesSaved.module.css';
 import apiUrl from '../../utils/api';
 
 const LivesSaved = () => {
@@ -10,7 +10,7 @@ const LivesSaved = () => {
       const response = await axios.get(`${apiUrl}/LivesSavedData`);
       const data = response.data;
 
-      const lineChart = document.getElementById('chart').getContext('2d');
+      const lineChart = document.getElementById('LivesSaved-chart').getContext('2d');
 
       new Chart(lineChart, {
         type: 'line',
@@ -71,12 +71,12 @@ const LivesSaved = () => {
   }, []);
 
   return (
-    <div className='chart-container'>
-      <h2>Lives Saved</h2>
-      <h1>10,875</h1>
+    <div className={styles.chartContainer}>
+      <h2 className={styles.title}>Lives Saved</h2>
+      <h1 className={styles.subtitle}>10,875</h1>
 
-      <div className='chart-wrapper'>
-        <canvas id='chart' />
+      <div className={styles.chartWrapper}>
+        <canvas id='LivesSaved-chart' className={styles.chart} />
       </div>
     </div>
   );

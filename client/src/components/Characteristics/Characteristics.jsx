@@ -1,5 +1,5 @@
 import React from 'react';
-import './Characteristics.css';
+import styles from './Characteristics.module.css';
 
 const Characteristics = () => {
   return (

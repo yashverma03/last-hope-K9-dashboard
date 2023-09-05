@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdoptByAge.css';
+import styles from './AdoptByAge.module.css';
 
 const AdoptByAge = () => {
   return (

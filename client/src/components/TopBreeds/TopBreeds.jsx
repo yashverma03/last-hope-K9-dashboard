@@ -1,5 +1,5 @@
 import React from 'react';
-import './TopBreeds.css';
+import styles from './TopBreeds.module.css';
 
 const TopBreeds = () => {
   return (
