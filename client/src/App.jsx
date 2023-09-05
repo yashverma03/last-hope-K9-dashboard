@@ -14,7 +14,7 @@ const App = () => {
       </div>
 
       <div className='component'>
-        {/* <AdoptByAge /> */}
+        <AdoptByAge />
         <AdoptOverTime />
       </div>
 
