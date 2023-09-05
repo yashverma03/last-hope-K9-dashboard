@@ -9,13 +9,13 @@
     { "year": ""}
   ],
 
-  "AdoptByAge": [
+  "AdoptByAgeData": [
     { "ageBucket": "0-1 Puppy", "age": 30 },
     { "ageBucket": "2-6 Adult", "age": 85 },
     { "ageBucket": "7+ Senior", "age": 103 }
   ],
 
-  "AdoptOverTime": [
+  "AdoptOverTimeData": [
     { "year": "" },
     { "year": "2017", "number": 37 },
     { "year": "2018", "number": 47 },
@@ -26,14 +26,14 @@
     { "year": "" }
   ],
 
-  "Characteristics": [
+  "CharacteristicsData": [
     { "status": "Get Along with Dogs", "yes": 87, "no": 1, "notSure": 12 },
     { "status": "Get Along with Cats", "yes": 29, "no": 7, "notSure": 64 },
     { "status": "Get Along with Kids", "yes": 58, "no": 3, "notSure": 39 },
     { "status": "Are Housebroken", "yes": 38, "no": 6, "notSure": 56 }
   ],
   
-  "TopBreeds": [
+  "TopBreedsData": [
     { "name": "Labrador", "number": 1422 },
     { "name": "Pit", "number": 838 },
     { "name": "Hound", "number": 400 },
