@@ -27,7 +27,7 @@
 .verticalLine {
   position: absolute;
   top: 0;
-  right: -50px;
+  right: -80px;
   width: 2px;
   height: 100%;
   background-color: rgb(211, 210, 210);
