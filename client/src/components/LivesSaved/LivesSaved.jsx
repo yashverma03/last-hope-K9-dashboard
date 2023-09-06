@@ -58,22 +58,22 @@ const LivesSaved = () => {
                 },
               },
             },
-            x2: { 
+            x2: {
               position: 'top',
               grid: {
                 display: false,
               },
               ticks: {
-                display: false, 
+                display: false,
               },
             },
-            y2: { 
-              position: 'right', 
+            y2: {
+              position: 'right',
               grid: {
                 display: false,
               },
               ticks: {
-                display: false, 
+                display: false,
               },
             },
           },
@@ -96,6 +96,8 @@ const LivesSaved = () => {
       <div className={styles.chartWrapper}>
         <canvas id='LivesSaved-chart' className={styles.chart} />
       </div>
+
+      <div className={styles.verticalLine} />
     </div>
   );
 };
