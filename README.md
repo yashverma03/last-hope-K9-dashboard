@@ -22,5 +22,4 @@ Actual Tableau dashboard
 <br>
 
 Cloned dashboard
-
-![](https://github.com/yashverma03/last-hope-K9-dashboard/assets/94443269/0030783b-125d-4203-b581-6c33703415b1)
+![](https://github.com/yashverma03/last-hope-K9-dashboard/assets/94443269/0b8e04b2-00f8-4b80-84cb-b73dcb63c382)
