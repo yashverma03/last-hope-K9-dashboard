@@ -54,6 +54,24 @@ const AdoptOverTime = () => {
                 max: 60,
               },
             },
+            x2: {
+              position: 'top',
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+            y2: {
+              position: 'right',
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
           },
         },
       });

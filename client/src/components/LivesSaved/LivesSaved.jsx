@@ -58,6 +58,24 @@ const LivesSaved = () => {
                 },
               },
             },
+            x2: { 
+              position: 'top',
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false, 
+              },
+            },
+            y2: { 
+              position: 'right', 
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false, 
+              },
+            },
           },
         },
       });

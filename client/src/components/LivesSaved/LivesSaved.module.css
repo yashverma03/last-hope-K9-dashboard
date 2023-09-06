@@ -1,5 +1,5 @@
 .chartContainer {
-  width: 400px;
+  width: 370px;
   margin: 20px;
 }
 
@@ -18,10 +18,6 @@
   margin-bottom: 10px;
 }
 
-.chartWrapper {
-  border: 1px solid rgb(205, 202, 202);
-}
-
 .chart {
-  height: 400px;
+  height: 450px;
 }
