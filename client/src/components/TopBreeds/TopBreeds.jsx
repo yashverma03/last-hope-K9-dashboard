@@ -66,7 +66,9 @@ const TopBreeds = () => {
             ticks: {
               display: false, 
             },
-            borderColor: 'rgba(0, 0, 0, 0)',
+            border: {
+              color: '#f8f8f8',
+            },
           },
           y: {
             beginAtZero: true,
@@ -76,6 +78,9 @@ const TopBreeds = () => {
             ticks: {
               color: 'black',
               // align: 'start',
+            },
+            border: {
+              color: '#f8f8f8',
             },
           },
         },

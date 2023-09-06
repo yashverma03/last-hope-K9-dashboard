@@ -65,7 +65,9 @@ const AdoptByAge = () => {
             ticks: {
               display: false, 
             },
-            borderColor: 'rgba(0, 0, 0, 0)',
+            border: {
+              color: '#f8f8f8',
+            },
           },
           y: {
             beginAtZero: true,
@@ -74,6 +76,9 @@ const AdoptByAge = () => {
             },
             ticks: {
               color: 'black',
+            },
+            border: {
+              color: '#f8f8f8',
             },
           },
         },

@@ -73,7 +73,9 @@ const Characteristics = () => {
             ticks: {
               display: false,
             },
-            borderColor: 'rgba(0, 0, 0, 0)',
+            border: {
+              color: '#f8f8f8',
+            },
           },
           y: {
             stacked: true,
@@ -83,6 +85,9 @@ const Characteristics = () => {
             },
             ticks: {
               color: 'black',
+            },
+            border: {
+              color: '#f8f8f8',
             },
           },
         },
