@@ -1,0 +1,48 @@
+{
+  "LivesSavedData": [
+    { "year": "" },
+    { "year": "2014", "number": 2200 },
+    { "year": "2016", "number": 4400 },
+    { "year": "2018", "number": 7000 },
+    { "year": "2020", "number": 9400 },
+    { "year": "2022", "number": 10875 },
+    { "year": ""}
+  ],
+
+  "AdoptByAgeData": [
+    { "ageBucket": "0-1 Puppy", "age": 30 },
+    { "ageBucket": "2-6 Adult  ", "age": 85 },
+    { "ageBucket": "7+ Senior ", "age": 103 }
+  ],
+
+  "AdoptOverTimeData": [
+    { "year": "" },
+    { "year": "2017", "number": 37 },
+    { "year": "2018", "number": 47 },
+    { "year": "2019", "number": 53 },
+    { "year": "2020", "number": 39 },
+    { "year": "2021", "number": 42 },
+    { "year": "2022", "number": 55 },
+    { "year": "" }
+  ],
+
+  "CharacteristicsData": [
+    { "status": "Get Along with Dogs", "yes": 87, "no": 1, "notSure": 12 },
+    { "status": "Get Along with Cats ", "yes": 29, "no": 7, "notSure": 64 },
+    { "status": "Get Along with Kids ", "yes": 58, "no": 3, "notSure": 39 },
+    { "status": "Are Housebroken    ", "yes": 38, "no": 6, "notSure": 56 }
+  ],
+  
+  "TopBreedsData": [
+    { "name": "Labrador  ", "number": 1422 },
+    { "name": "Pit            ", "number": 838 },
+    { "name": "Hound      ", "number": 400 },
+    { "name": "Shepherd ", "number": 376 },
+    { "name": "Terrier      ", "number": 306 },
+    { "name": "American ", "number": 157 },
+    { "name": "Catahoula", "number": 155 },
+    { "name": "Hounds    ", "number": 150 },
+    { "name": "Australian", "number": 126 },
+    { "name": "Mountain ", "number": 108 }
+  ]
+}

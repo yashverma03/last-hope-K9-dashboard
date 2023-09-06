@@ -1,0 +1,34 @@
+.chartContainer {
+  width: 370px;
+  margin: 20px;
+  margin-right: 60px;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  color: rgb(107, 107, 107);
+  font-weight: 600;
+  font-family: 'Benton Sans Low-DPI', Arial, Helvetica, sans-serif;
+  margin-bottom: -25px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Benton Sans Low-DPI', Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.chart {
+  height: 420px;
+}
+
+.verticalLine {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(211, 210, 210);
+}
