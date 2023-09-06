@@ -41,23 +41,21 @@ const Characteristics = () => {
       type: 'bar',
       data: {
         labels: statuses,
-        datasets: [
-          {
-            label: 'Does/Are',
-            data: yesPercentages,
-            backgroundColor: 'rgba(75, 192, 192, 0.3)',
-          },
-          {
-            label: 'Does Not/ Are ...',
-            data: noPercentages,
-            backgroundColor: 'rgb(105,105,105)',
-          },
-          {
-            label: 'Not Sure',
-            data: notSurePercentages,
-            backgroundColor: 'rgb(224,224,224)',
-          },
-        ],
+        datasets: [{
+          label: 'Does/Are',
+          data: yesPercentages,
+          backgroundColor: 'rgba(75, 192, 192, 0.3)',
+        },
+        {
+          label: 'Does Not/ Are ...',
+          data: noPercentages,
+          backgroundColor: 'rgb(105,105,105)',
+        },
+        {
+          label: 'Not Sure',
+          data: notSurePercentages,
+          backgroundColor: 'rgb(224,224,224)',
+        }],
       },
       options: {
         indexAxis: 'y',
@@ -101,10 +99,6 @@ const Characteristics = () => {
             },
             itemWidth: 1,
           },
-          tooltips: {
-            mode: 'index',
-            intersect: false,
-          },
           responsive: true,
           scales: {
             x: {
@@ -123,6 +117,7 @@ const Characteristics = () => {
     <div className={styles.chartContainer}>
       <h2 className={styles.title}>Characteristics</h2>
       <h1 className={styles.subtitle}>Proportion of Dogs that ...</h1>
+
       <div className={styles.chartWrapper}>
         <canvas id='Characteristics-chart' className={styles.chart} />
       </div>

@@ -3,7 +3,6 @@ import axios from 'axios';
 import Chart from 'chart.js/auto';
 import styles from './AdoptByAge.module.css';
 import apiUrl from '../../utils/api';
-import 'chartjs-plugin-datalabels';
 
 const AdoptByAge = () => {
   useEffect(() => {
@@ -48,13 +47,7 @@ const AdoptByAge = () => {
         plugins: {
           legend: {
             display: false,
-          },
-          datalabels: {
-            anchor: 'end',
-            align: 'end',
-            // Formatter to display values with ' days' suffix
-            formatter: (value) => `${value} days`,
-          },
+          },          
         },
         scales: {
           x: {

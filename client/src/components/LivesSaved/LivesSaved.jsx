@@ -5,88 +5,102 @@ import styles from './LivesSaved.module.css';
 import apiUrl from '../../utils/api';
 
 const LivesSaved = () => {
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   const fetchData = async () => {
     try {
       const response = await axios.get(`${apiUrl}/LivesSavedData`);
       const data = response.data;
-
-      const lineChart = document.getElementById('LivesSaved-chart').getContext('2d');
-
-      new Chart(lineChart, {
-        type: 'line',
-        data: {
-          labels: data.map((dataPoint) => dataPoint.year),
-          datasets: [{
-            data: data.map((dataPoint) => dataPoint.number),
-            borderColor: 'rgb(75, 192, 192)',
-            borderWidth: 3,
-            backgroundColor: 'rgba(173, 216, 230, 0.3)',
-            fill: true,
-            pointRadius: 0,
-          }],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false,
-            },
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              grid: {
-                display: false,
-              },
-              ticks: {
-                color: 'black',
-              },
-            },
-            y: {
-              beginAtZero: true,
-              grid: {
-                display: false,
-              },
-              ticks: {
-                color: 'black',
-                stepSize: 2000,
-                callback: (value, index) => {
-                  if (index <= 5) {
-                    return `${value / 1000}k`;
-                  }
-                },
-              },
-            },
-            x2: {
-              position: 'top',
-              grid: {
-                display: false,
-              },
-              ticks: {
-                display: false,
-              },
-            },
-            y2: {
-              position: 'right',
-              grid: {
-                display: false,
-              },
-              ticks: {
-                display: false,
-              },
-            },
-          },
-        },
-      });
+      renderLineChart(data);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const renderLineChart = (data) => {
+    if (data.length === 0) {
+      return;
+    }
+
+    const years = data.map((dataPoint) => dataPoint.year);
+    const numbers = data.map((dataPoint) => dataPoint.number);
+
+    const lineChart = document.getElementById('LivesSaved-chart').getContext('2d');
+
+    new Chart(lineChart, {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [{
+          data: numbers,
+          borderColor: 'rgb(75, 192, 192)',
+          borderWidth: 3,
+          backgroundColor: 'rgba(173, 216, 230, 0.3)',
+          fill: true,
+          pointRadius: 0,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
+          tooltip: {
+            enabled: true,
+            intersect: true,
+          },
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            grid: {
+              display: false,
+            },
+            ticks: {
+              color: 'black',
+            },
+          },
+          y: {
+            beginAtZero: true,
+            grid: {
+              display: false,
+            },
+            ticks: {
+              color: 'black',
+              stepSize: 2000,
+              callback: (value, index) => {
+                if (index <= 5) {
+                  return `${value / 1000}k`;
+                }
+              },
+            },
+          },
+          x2: {
+            position: 'top',
+            grid: {
+              display: false,
+            },
+            ticks: {
+              display: false,
+            },
+          },
+          y2: {
+            position: 'right',
+            grid: {
+              display: false,
+            },
+            ticks: {
+              display: false,
+            },
+          },
+        },
+      },
+    });
+  };
 
   return (
     <div className={styles.chartContainer}>

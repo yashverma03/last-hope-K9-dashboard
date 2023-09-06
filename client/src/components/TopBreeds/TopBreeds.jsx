@@ -3,8 +3,6 @@ import axios from 'axios';
 import Chart from 'chart.js/auto';
 import styles from './TopBreeds.module.css';
 import apiUrl from '../../utils/api';
-import 'chartjs-plugin-datalabels';
-
 
 const TopBreeds = () => {
   useEffect(() => {
@@ -50,12 +48,6 @@ const TopBreeds = () => {
           legend: {
             display: false,
           },
-          datalabels: {
-            anchor: 'end',
-            align: 'end',
-            // Formatter to display values with ' days' suffix
-            formatter: (value) => `${value} days`,
-          },
         },
         scales: {
           x: {
@@ -77,7 +69,6 @@ const TopBreeds = () => {
             },
             ticks: {
               color: 'black',
-              // align: 'start',
             },
             border: {
               color: '#f8f8f8',

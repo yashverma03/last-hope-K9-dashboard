@@ -1,7 +1,4 @@
 import jsonServer from 'json-server';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const server = jsonServer.create();
 
@@ -11,7 +8,6 @@ const router = jsonServer.router('data.json');
 server.use(router);
 
 const port = 4000;
-
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
